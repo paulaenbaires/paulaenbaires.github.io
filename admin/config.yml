@@ -4,6 +4,7 @@ backend:
   name: github
   repo: paulaenbaires/tailandiaentusmanos.com
   branch: main
+  base_url: https://tailandia-cms-auth.paulaenbaires.workers.dev
 
 site_url: https://tailandiaentusmanos.com
 display_url: https://tailandiaentusmanos.com
