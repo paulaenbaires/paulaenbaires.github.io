@@ -24,7 +24,7 @@ collections:
     files:
       - name: about
         label: "Sobre Mí / About"
-        file: "content/about/index.md"
+        file: "content/about/{{locale}}/index.md"
         i18n: true
         fields:
           - { label: "Title", name: "title", widget: "string", i18n: true }
