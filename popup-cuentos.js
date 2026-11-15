@@ -95,10 +95,10 @@
     overlay.innerHTML =
       '<div class="tth-card">' +
         '<button class="tth-x" type="button" aria-label="Cerrar">✕</button>' +
-        '<img class="tth-esq tl" src="' + ASSETS + 'esquinero-kanok.png" alt="" aria-hidden="true">' +
-        '<img class="tth-esq tr" src="' + ASSETS + 'esquinero-kanok.png" alt="" aria-hidden="true">' +
+        '<img class="tth-esq tl" src="https://lh3.googleusercontent.com/d/1XovJfHuBgY3KZa-2Xq0othFak1fr6O2W" alt="" aria-hidden="true">' +
+        '<img class="tth-esq tr" src="https://lh3.googleusercontent.com/d/1XovJfHuBgY3KZa-2Xq0othFak1fr6O2W" alt="" aria-hidden="true">' +
         '<div class="tth-portada">' +
-          '<img src="' + ASSETS + 'portada-cuentos.png" alt="Portada del libro Tres cuentos de Tailandia">' +
+          '<img src="https://lh3.googleusercontent.com/d/16Q7iHonyxQXhXbAM_kXOcKJ7lffW4wqT" alt="Portada del libro Tres cuentos de Tailandia">' +
         '</div>' +
         '<div class="tth-cuerpo">' +
           '<span class="tth-kicker">Un regalo para vos</span>' +
@@ -121,7 +121,7 @@
           '</div>' +
           '<p class="tth-nota">Nada de spam: una carta corta de Tailandia, cada tanto. Te das de baja con un clic.</p>' +
           '<a class="tth-link" href="/regalo/">Ver de qué se trata el libro →</a>' +
-          '<img class="tth-banda" src="' + ASSETS + 'banda-rombos.png" alt="" aria-hidden="true">' +
+          '<img class="tth-banda" src="https://lh3.googleusercontent.com/d/1yGw1wFY-g9iy9XgMnHG9CZ8Q8PaIXdfe" alt="" aria-hidden="true">' +
         '</div>' +
       '</div>';
 
