@@ -104,7 +104,7 @@
           '<span class="tth-kicker">Un regalo para vos</span>' +
           '<p class="tth-titulo">Tres cuentos<span>de Tailandia</span></p>' +
           '<p class="tth-texto">Tres relatos de la tradición tailandesa, ilustrados y con una carta ' +
-          'de bienvenida de Paula. Es de regalo: dejame tu correo y te llega en el momento.</p>' +
+          'de bienvenida de Paula. Es de regalo: dejame tu mail y te llega solo.</p>' +
           '<div class="tth-brevo-slot">' +
             '<!-- ============================================================\n' +
             '     BREVO-EMBED-START\n' +
@@ -114,12 +114,12 @@
             '     una maqueta visual: el campo está deshabilitado y no envía nada.\n' +
             '     ============================================================ -->' +
             '<form class="tth-form" aria-hidden="true">' +
-              '<input type="email" placeholder="Tu correo" disabled>' +
+              '<input type="email" placeholder="Tu mail" disabled>' +
               '<button type="button" disabled>Quiero mi libro</button>' +
             '</form>' +
             '<!-- BREVO-EMBED-END -->' +
           '</div>' +
-          '<p class="tth-nota">Nada de spam: una carta corta de Tailandia, de vez en cuando. Te das de baja con un clic.</p>' +
+          '<p class="tth-nota">Nada de spam: una carta corta de Tailandia, cada tanto. Te das de baja con un clic.</p>' +
           '<a class="tth-link" href="/regalo/">Ver de qué se trata el libro →</a>' +
           '<img class="tth-banda" src="https://lh3.googleusercontent.com/d/1yGw1wFY-g9iy9XgMnHG9CZ8Q8PaIXdfe" alt="" aria-hidden="true">' +
         '</div>' +
