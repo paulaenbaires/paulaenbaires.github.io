@@ -103,14 +103,14 @@
         '<div class="tth-portada">' +
           '<div class="tth-fan">' +
             '<img class="c1" src="https://lh3.googleusercontent.com/d/16Q7iHonyxQXhXbAM_kXOcKJ7lffW4wqT" alt="Portada del libro Tres cuentos de Tailandia">' +
-            '<img class="c2" src="https://lh3.googleusercontent.com/d/1aLGBHdRLXmnLM9GAPFkvuLtaISbL_f8B" alt="Portada del librito Sawasdee: tus primeras palabras en tailandés">' +
+            '<img class="c2" src="https://lh3.googleusercontent.com/d/1aLGBHdRLXmnLM9GAPFkvuLtaISbL_f8B" alt="Portada del libro Sawasdee: tus primeras palabras en tailandés">' +
           '</div>' +
         '</div>' +
         '<div class="tth-cuerpo">' +
           '<span class="tth-kicker">Dos libros de regalo</span>' +
           '<p class="tth-titulo">Dos libros<span>de Tailandia</span></p>' +
           '<p class="tth-texto">Tres cuentos de la tradición tailandesa, ilustrados, y Sawasdee, ' +
-          'un librito con tus primeras palabras en tailandés. Son de regalo: dejame tu correo y los descargás en el momento.</p>' +
+          'un libro con tus primeras palabras en tailandés. Son de regalo: dejame tu correo y los descargás en el momento.</p>' +
           '<div class="tth-brevo-slot">' +
             '<!-- BREVO-EMBED-START: formulario Brevo embebido (misma lista que /regalo/, cableado 16/11) -->' +
             '<iframe width="540" height="430" src="https://24d5549d.sibforms.com/v2/serve/MUIFAA6Cn7WyrX6IFT7p5G1cCSD5iKUS2fxEsDl9lvw4xDzo29jmp3mY_0Hu_UlGy0rW7JAr5z2Pxt92-1P1y1rGMrHRA7W33PYt7qnshXJNZaulVRuGIEygw5AtAf7Y2Gfx7g2a4cpnP_mqFNWEvmoQPNkF47RSH4kdGh7zp8r7dobB75DtfrSJgK0viStl9UE3t38F-dvZlgysCQ==" frameborder="0" scrolling="auto" allowfullscreen style="display:block;margin:0;max-width:100%;width:100%;border:0"></iframe>' +
