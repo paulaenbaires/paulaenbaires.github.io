@@ -104,7 +104,7 @@
           '<span class="tth-kicker">Un regalo para vos</span>' +
           '<p class="tth-titulo">Tres cuentos<span>de Tailandia</span></p>' +
           '<p class="tth-texto">Tres relatos de la tradición tailandesa, ilustrados y con una carta ' +
-          'de bienvenida de Paula. Es de regalo: dejame tu correo y te llega en el momento.</p>' +
+          'de bienvenida de Paula. Es de regalo: dejame tu correo y lo descargás en el momento.</p>' +
           '<div class="tth-brevo-slot">' +
             '<!-- BREVO-EMBED-START: formulario Brevo embebido (misma lista que /regalo/, cableado 16/11) -->' +
             '<iframe width="540" height="430" src="https://24d5549d.sibforms.com/v2/serve/MUIFAA6Cn7WyrX6IFT7p5G1cCSD5iKUS2fxEsDl9lvw4xDzo29jmp3mY_0Hu_UlGy0rW7JAr5z2Pxt92-1P1y1rGMrHRA7W33PYt7qnshXJNZaulVRuGIEygw5AtAf7Y2Gfx7g2a4cpnP_mqFNWEvmoQPNkF47RSH4kdGh7zp8r7dobB75DtfrSJgK0viStl9UE3t38F-dvZlgysCQ==" frameborder="0" scrolling="auto" allowfullscreen style="display:block;margin:0;max-width:100%;width:100%;border:0"></iframe>' +
