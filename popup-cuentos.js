@@ -1,5 +1,5 @@
 /* ============================================================
-   Popup "Tres cuentos de Tailandia" - Tailandia en tus manos
+   Popup "Dos libros de Tailandia" (Tres cuentos + Sawasdee) - Tailandia en tus manos
    ------------------------------------------------------------
    INSTALACIÓN (sitio SvelteKit estático):
    1. Subir este archivo como  static/popup-cuentos.js
@@ -45,9 +45,9 @@
       'padding:18px;animation:tth-fade .35s ease;font-family:Raleway,sans-serif}',
       '@keyframes tth-fade{from{opacity:0}to{opacity:1}}',
       '.tth-card{position:relative;background:#fbf3e2;border:2px solid #a67c2e;outline:1px solid #c9a44a;',
-      'outline-offset:5px;border-radius:6px;max-width:700px;width:100%;max-height:92vh;max-height:92dvh;',
+      'outline-offset:5px;border-radius:6px;max-width:740px;width:100%;max-height:92vh;max-height:92dvh;',
       'overflow-y:auto;box-shadow:0 30px 80px rgba(0,0,0,.45);padding:38px 40px 30px;',
-      'display:grid;grid-template-columns:200px 1fr;gap:30px;align-items:center;color:#2b2320}',
+      'display:grid;grid-template-columns:235px 1fr;gap:30px;align-items:center;color:#2b2320}',
       '.tth-x{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:50%;border:none;',
       'background:#571c26;color:#fbf3e2;font-size:19px;line-height:1;cursor:pointer;z-index:3;',
       'font-family:inherit}',
@@ -56,7 +56,10 @@
       '.tth-esq.tl{top:4px;left:4px}.tth-esq.tr{top:4px;right:4px;transform:scaleX(-1)}',
       '.tth-portada{background:#571c26;padding:9px;border-radius:5px;box-shadow:0 12px 30px rgba(61,18,27,.35);',
       'position:relative;z-index:2}',
-      '.tth-portada img{display:block;width:100%;border-radius:2px}',
+      '.tth-portada .tth-fan{display:flex;align-items:flex-end}',
+      '.tth-portada img{display:block;border-radius:2px;box-shadow:0 6px 16px rgba(0,0,0,.3)}',
+      '.tth-portada img.c1{width:61%}',
+      '.tth-portada img.c2{width:53%;margin-left:-14%;transform:rotate(3deg)}',
       '.tth-cuerpo{position:relative;z-index:2}',
       '.tth-kicker{display:block;color:#b4502e;font-weight:700;letter-spacing:.16em;font-size:.68rem;',
       'text-transform:uppercase;margin-bottom:8px}',
@@ -78,7 +81,7 @@
       '#tth-popup-overlay{padding:10px}',
       '.tth-card{grid-template-columns:1fr;padding:46px 20px 24px;gap:20px;text-align:center;',
       'max-height:94vh;max-height:94dvh}',
-      '.tth-portada{max-width:170px;margin:0 auto}',
+      '.tth-portada{max-width:200px;margin:0 auto}',
       '.tth-form{flex-direction:column}',
       '.tth-form input,.tth-form button{width:100%;flex:0 0 auto}',
       '.tth-esq{width:52px;height:52px}',
@@ -90,7 +93,7 @@
     overlay.id = 'tth-popup-overlay';
     overlay.setAttribute('role', 'dialog');
     overlay.setAttribute('aria-modal', 'true');
-    overlay.setAttribute('aria-label', 'Regalo: Tres cuentos de Tailandia');
+    overlay.setAttribute('aria-label', 'Regalo: dos libros de Tailandia (Tres cuentos + Sawasdee)');
 
     overlay.innerHTML =
       '<div class="tth-card">' +
@@ -98,20 +101,23 @@
         '<img class="tth-esq tl" src="https://lh3.googleusercontent.com/d/1XovJfHuBgY3KZa-2Xq0othFak1fr6O2W" alt="" aria-hidden="true">' +
         '<img class="tth-esq tr" src="https://lh3.googleusercontent.com/d/1XovJfHuBgY3KZa-2Xq0othFak1fr6O2W" alt="" aria-hidden="true">' +
         '<div class="tth-portada">' +
-          '<img src="https://lh3.googleusercontent.com/d/16Q7iHonyxQXhXbAM_kXOcKJ7lffW4wqT" alt="Portada del libro Tres cuentos de Tailandia">' +
+          '<div class="tth-fan">' +
+            '<img class="c1" src="https://lh3.googleusercontent.com/d/16Q7iHonyxQXhXbAM_kXOcKJ7lffW4wqT" alt="Portada del libro Tres cuentos de Tailandia">' +
+            '<img class="c2" src="https://lh3.googleusercontent.com/d/1aLGBHdRLXmnLM9GAPFkvuLtaISbL_f8B" alt="Portada del librito Sawasdee: tus primeras palabras en tailandés">' +
+          '</div>' +
         '</div>' +
         '<div class="tth-cuerpo">' +
-          '<span class="tth-kicker">Un regalo para vos</span>' +
-          '<p class="tth-titulo">Tres cuentos<span>de Tailandia</span></p>' +
-          '<p class="tth-texto">Tres relatos de la tradición tailandesa, ilustrados y con una carta ' +
-          'de bienvenida de Paula. Es de regalo: dejame tu correo y lo descargás en el momento.</p>' +
+          '<span class="tth-kicker">Dos libros de regalo</span>' +
+          '<p class="tth-titulo">Dos libros<span>de Tailandia</span></p>' +
+          '<p class="tth-texto">Tres cuentos de la tradición tailandesa, ilustrados, y Sawasdee, ' +
+          'un librito con tus primeras palabras en tailandés. Son de regalo: dejame tu correo y los descargás en el momento.</p>' +
           '<div class="tth-brevo-slot">' +
             '<!-- BREVO-EMBED-START: formulario Brevo embebido (misma lista que /regalo/, cableado 16/11) -->' +
             '<iframe width="540" height="430" src="https://24d5549d.sibforms.com/v2/serve/MUIFAA6Cn7WyrX6IFT7p5G1cCSD5iKUS2fxEsDl9lvw4xDzo29jmp3mY_0Hu_UlGy0rW7JAr5z2Pxt92-1P1y1rGMrHRA7W33PYt7qnshXJNZaulVRuGIEygw5AtAf7Y2Gfx7g2a4cpnP_mqFNWEvmoQPNkF47RSH4kdGh7zp8r7dobB75DtfrSJgK0viStl9UE3t38F-dvZlgysCQ==" frameborder="0" scrolling="auto" allowfullscreen style="display:block;margin:0;max-width:100%;width:100%;border:0"></iframe>' +
             '<!-- BREVO-EMBED-END -->' +
           '</div>' +
           '<p class="tth-nota">Nada de spam: una carta corta de Tailandia, de vez en cuando. Te das de baja con un clic.</p>' +
-          '<a class="tth-link" href="/regalo/">Ver de qué se trata el libro →</a>' +
+          '<a class="tth-link" href="/regalo/">Ver de qué se tratan los libros →</a>' +
           '<img class="tth-banda" src="https://lh3.googleusercontent.com/d/1yGw1wFY-g9iy9XgMnHG9CZ8Q8PaIXdfe" alt="" aria-hidden="true">' +
         '</div>' +
       '</div>';
