@@ -445,6 +445,50 @@ collections:
           - { label: 'Interfaz · tema oscuro', name: 'theme_dark', widget: 'string' }
           - { label: 'Interfaz · tema del sistema', name: 'theme_system', widget: 'string' }
           - { label: 'Interfaz · nombre del otro idioma', name: 'lang_switch', widget: 'string' }
+  - name: 'regalo'
+    label: 'Popup y página de regalo / Gift popup & page'
+    files:
+      - name: 'popup'
+        label: 'Popup de regalo (aparece en la home)'
+        file: 'static/popup-cuentos.json'
+        fields:
+          - { label: 'Popup regalo · texto accesible del cuadro (lectores de pantalla)', name: 'aria_label', widget: 'string' }
+          - { label: 'Popup regalo · botón cerrar — texto accesible', name: 'cerrar', widget: 'string' }
+          - { label: 'Popup regalo · imagen 1 — texto alternativo', name: 'alt1', widget: 'text' }
+          - { label: 'Popup regalo · imagen 2 — texto alternativo', name: 'alt2', widget: 'text' }
+          - { label: 'Popup regalo · rótulo pequeño', name: 'kicker', widget: 'string' }
+          - { label: 'Popup regalo · título', name: 'titulo', widget: 'string' }
+          - { label: 'Popup regalo · título — segunda línea', name: 'titulo_span', widget: 'string' }
+          - { label: 'Popup regalo · texto principal', name: 'texto', widget: 'text' }
+          - { label: 'Popup regalo · nota bajo el formulario', name: 'nota', widget: 'text' }
+          - { label: 'Popup regalo · enlace a la página de regalo', name: 'link', widget: 'string' }
+      - name: 'pagina_regalo'
+        label: 'Página /regalo/ (los dos libros)'
+        file: 'static/regalo-textos.json'
+        fields:
+          - { label: 'Página /regalo/ · título de la pestaña (SEO)', name: 'title', widget: 'text' }
+          - { label: 'Página /regalo/ · descripción para buscadores (SEO)', name: 'meta_desc', widget: 'text' }
+          - { label: 'Página /regalo/ · enlace volver al sitio', name: 'volver', widget: 'string' }
+          - { label: 'Página /regalo/ · rótulo pequeño', name: 'kicker', widget: 'string' }
+          - { label: 'Página /regalo/ · título principal', name: 'h1', widget: 'string' }
+          - { label: 'Página /regalo/ · título principal — segunda línea', name: 'h1_span', widget: 'string' }
+          - { label: 'Página /regalo/ · bajada', name: 'bajada', widget: 'text' }
+          - { label: 'Página /regalo/ · punto 1 (Tres cuentos)', name: 'li1', widget: 'text' }
+          - { label: 'Página /regalo/ · punto 2 (Sawasdee)', name: 'li2', widget: 'text' }
+          - { label: 'Página /regalo/ · punto 3 (descarga)', name: 'li3', widget: 'text' }
+          - { label: 'Página /regalo/ · portada 1 — texto alternativo', name: 'alt_c1', widget: 'text' }
+          - { label: 'Página /regalo/ · portada 2 — texto alternativo', name: 'alt_c2', widget: 'text' }
+          - { label: 'Página /regalo/ · título de la sección del formulario', name: 'h2', widget: 'text' }
+          - { label: 'Página /regalo/ · texto junto al formulario', name: 'texto', widget: 'text' }
+          - { label: 'Página /regalo/ · nota bajo el formulario', name: 'notita', widget: 'string' }
+          - { label: 'Página /regalo/ · cita de cierre', name: 'cita', widget: 'string' }
+          - { label: 'Página /regalo/ · firma', name: 'firma', widget: 'string' }
+          - { label: 'Página /regalo/ · logo — texto alternativo', name: 'alt_logo', widget: 'string' }
+          - { label: 'Página /regalo/ · pie — línea de marca', name: 'marca', widget: 'string' }
+          - { label: 'Página /regalo/ · pie — enlace Inicio', name: 'nav_inicio', widget: 'string' }
+          - { label: 'Página /regalo/ · pie — enlace Instagram', name: 'nav_instagram', widget: 'string' }
+          - { label: 'Página /regalo/ · pie — enlace WhatsApp', name: 'nav_whatsapp', widget: 'string' }
+          - { label: 'Página /regalo/ · pie — enlace email', name: 'nav_email', widget: 'string' }
   - name: about
     label: "Sobre Mí / About"
     i18n: true

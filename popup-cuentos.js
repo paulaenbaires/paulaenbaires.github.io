@@ -23,6 +23,30 @@
   var SUPPRESS_DAYS = 7;
   var LS_KEY = 'tth_popup_cuentos_closed';
 
+  var TEXTOS = {
+    aria_label: 'Regalo: dos libros de Tailandia (Tres cuentos + Sawasdee)',
+    cerrar: 'Cerrar',
+    alt1: 'Portada del libro Tres cuentos de Tailandia',
+    alt2: 'Portada del libro Sawasdee: tus primeras palabras en tailandés',
+    kicker: 'Dos libros de regalo',
+    titulo: 'Dos libros',
+    titulo_span: 'de Tailandia',
+    texto: 'Tres cuentos de la tradición tailandesa, ilustrados, y Sawasdee, un libro con tus primeras palabras en tailandés. Son de regalo: dejame tu correo y los descargás en el momento.',
+    nota: 'Nada de spam: una carta corta de Tailandia, de vez en cuando. Te das de baja con un clic.',
+    link: 'Ver de qué se tratan los libros →'
+  };
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+  function loadTextos(done) {
+    if (!window.fetch) { done(); return; }
+    fetch('/popup-cuentos.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (j) { for (var k in TEXTOS) { if (typeof j[k] === 'string') TEXTOS[k] = j[k]; } }
+        done();
+      })
+      .catch(function () { done(); });
+  }
+
   if (PATHS.indexOf(location.pathname.replace(/\/+$/, '') || '/') === -1 &&
       PATHS.indexOf(location.pathname) === -1) return;
 
@@ -31,7 +55,7 @@
     if (closed && (Date.now() - Number(closed)) < SUPPRESS_DAYS * 864e5) return;
   } catch (e) { /* sin localStorage: mostrar igual */ }
 
-  function boot() { setTimeout(show, DELAY_MS); }
+  function boot() { loadTextos(function () { setTimeout(show, DELAY_MS); }); }
   if (document.readyState === 'complete') boot();
   else window.addEventListener('load', boot);
 
@@ -93,31 +117,30 @@
     overlay.id = 'tth-popup-overlay';
     overlay.setAttribute('role', 'dialog');
     overlay.setAttribute('aria-modal', 'true');
-    overlay.setAttribute('aria-label', 'Regalo: dos libros de Tailandia (Tres cuentos + Sawasdee)');
+    overlay.setAttribute('aria-label', TEXTOS.aria_label);
 
     overlay.innerHTML =
       '<div class="tth-card">' +
-        '<button class="tth-x" type="button" aria-label="Cerrar">✕</button>' +
+        '<button class="tth-x" type="button" aria-label="' + esc(TEXTOS.cerrar) + '">✕</button>' +
         '<img class="tth-esq tl" src="https://lh3.googleusercontent.com/d/1XovJfHuBgY3KZa-2Xq0othFak1fr6O2W" alt="" aria-hidden="true">' +
         '<img class="tth-esq tr" src="https://lh3.googleusercontent.com/d/1XovJfHuBgY3KZa-2Xq0othFak1fr6O2W" alt="" aria-hidden="true">' +
         '<div class="tth-portada">' +
           '<div class="tth-fan">' +
-            '<img class="c1" src="https://lh3.googleusercontent.com/d/16Q7iHonyxQXhXbAM_kXOcKJ7lffW4wqT" alt="Portada del libro Tres cuentos de Tailandia">' +
-            '<img class="c2" src="https://lh3.googleusercontent.com/d/1aLGBHdRLXmnLM9GAPFkvuLtaISbL_f8B" alt="Portada del libro Sawasdee: tus primeras palabras en tailandés">' +
+            '<img class="c1" src="https://lh3.googleusercontent.com/d/16Q7iHonyxQXhXbAM_kXOcKJ7lffW4wqT" alt="' + esc(TEXTOS.alt1) + '">' +
+            '<img class="c2" src="https://lh3.googleusercontent.com/d/1aLGBHdRLXmnLM9GAPFkvuLtaISbL_f8B" alt="' + esc(TEXTOS.alt2) + '">' +
           '</div>' +
         '</div>' +
         '<div class="tth-cuerpo">' +
-          '<span class="tth-kicker">Dos libros de regalo</span>' +
-          '<p class="tth-titulo">Dos libros<span>de Tailandia</span></p>' +
-          '<p class="tth-texto">Tres cuentos de la tradición tailandesa, ilustrados, y Sawasdee, ' +
-          'un libro con tus primeras palabras en tailandés. Son de regalo: dejame tu correo y los descargás en el momento.</p>' +
+          '<span class="tth-kicker">' + esc(TEXTOS.kicker) + '</span>' +
+          '<p class="tth-titulo">' + esc(TEXTOS.titulo) + '<span>' + esc(TEXTOS.titulo_span) + '</span></p>' +
+          '<p class="tth-texto">' + esc(TEXTOS.texto) + '</p>' +
           '<div class="tth-brevo-slot">' +
             '<!-- BREVO-EMBED-START: formulario Brevo embebido (misma lista que /regalo/, cableado 16/11) -->' +
             '<iframe width="540" height="430" src="https://24d5549d.sibforms.com/v2/serve/MUIFAA6Cn7WyrX6IFT7p5G1cCSD5iKUS2fxEsDl9lvw4xDzo29jmp3mY_0Hu_UlGy0rW7JAr5z2Pxt92-1P1y1rGMrHRA7W33PYt7qnshXJNZaulVRuGIEygw5AtAf7Y2Gfx7g2a4cpnP_mqFNWEvmoQPNkF47RSH4kdGh7zp8r7dobB75DtfrSJgK0viStl9UE3t38F-dvZlgysCQ==" frameborder="0" scrolling="auto" allowfullscreen style="display:block;margin:0;max-width:100%;width:100%;border:0"></iframe>' +
             '<!-- BREVO-EMBED-END -->' +
           '</div>' +
-          '<p class="tth-nota">Nada de spam: una carta corta de Tailandia, de vez en cuando. Te das de baja con un clic.</p>' +
-          '<a class="tth-link" href="/regalo/">Ver de qué se tratan los libros →</a>' +
+          '<p class="tth-nota">' + esc(TEXTOS.nota) + '</p>' +
+          '<a class="tth-link" href="/regalo/">' + esc(TEXTOS.link) + '</a>' +
           '<img class="tth-banda" src="https://lh3.googleusercontent.com/d/1yGw1wFY-g9iy9XgMnHG9CZ8Q8PaIXdfe" alt="" aria-hidden="true">' +
         '</div>' +
       '</div>';
