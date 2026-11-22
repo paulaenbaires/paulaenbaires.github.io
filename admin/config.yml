@@ -18,6 +18,369 @@ i18n:
   default_locale: es
 
 collections:
+  - name: 'texts'
+    label: 'Textos de la web / Site Texts'
+    files:
+      - name: 'texts_es'
+        label: 'Todos los textos — Español'
+        file: 'messages/es.json'
+        fields:
+          - { label: '(uso interno, no editar)', name: '$schema', widget: 'hidden' }
+          - { label: 'Viaje de formación · Portada — rótulo pequeño', name: 'travel_kicker', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — frase principal', name: 'travel_claim', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — dato: duración', name: 'travel_fact_days', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — dato: ciudades', name: 'travel_fact_cities', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — dato: grupo', name: 'travel_fact_group', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — dato: formación', name: 'travel_fact_training', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — presentación del viaje', name: 'travel_pitch', widget: 'text' }
+          - { label: 'Viaje de formación · Itinerario — paso 1: título', name: 'travel_step1_title', widget: 'string' }
+          - { label: 'Viaje de formación · Itinerario — paso 1: texto', name: 'travel_step1_text', widget: 'string' }
+          - { label: 'Viaje de formación · Itinerario — paso 2: título', name: 'travel_step2_title', widget: 'string' }
+          - { label: 'Viaje de formación · Itinerario — paso 2: texto', name: 'travel_step2_text', widget: 'text' }
+          - { label: 'Viaje de formación · Itinerario — paso 3: título', name: 'travel_step3_title', widget: 'string' }
+          - { label: 'Viaje de formación · Itinerario — paso 3: texto', name: 'travel_step3_text', widget: 'text' }
+          - { label: 'Viaje de formación · Portada — botón', name: 'travel_cta_join', widget: 'string' }
+          - { label: 'Viaje de formación · Detalles — rótulo', name: 'details_kicker', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — título de la sección', name: 'travel_cities_title', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — Bangkok: título', name: 'city_bangkok_title', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — Bangkok: texto', name: 'city_bangkok_text', widget: 'text' }
+          - { label: 'Viaje de formación · Ciudades — Sukhothai: título', name: 'city_sukhothai_title', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — Sukhothai: texto', name: 'city_sukhothai_text', widget: 'text' }
+          - { label: 'Viaje de formación · Ciudades — Chiang Mai: título', name: 'city_chiangmai_title', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — Chiang Mai: texto', name: 'city_chiangmai_text', widget: 'text' }
+          - { label: 'Viaje de formación · Ciudades — Ayutthaya: título', name: 'city_ayutthaya_title', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — Ayutthaya: texto', name: 'city_ayutthaya_text', widget: 'text' }
+          - { label: 'Viaje de formación · Aprendizaje — título', name: 'travel_training_title', widget: 'string' }
+          - { label: 'Viaje de formación · Aprendizaje — texto', name: 'travel_training_text', widget: 'text' }
+          - { label: 'Viaje de formación · Video — rótulo', name: 'travel_video_kicker', widget: 'string' }
+          - { label: 'Viaje de formación · Video — título', name: 'travel_video_title', widget: 'string' }
+          - { label: 'Viaje de formación · Momentos — rótulo', name: 'travel_moments_kicker', widget: 'string' }
+          - { label: 'Viaje de formación · El grupo — título', name: 'travel_crew_title', widget: 'string' }
+          - { label: 'Viaje de formación · El grupo — texto', name: 'travel_crew_text', widget: 'text' }
+          - { label: 'Viaje de formación · Cierre — texto final', name: 'travel_closing', widget: 'text' }
+          - { label: 'Viaje de formación · Recorrido — rótulo', name: 'viaje_ruta_kicker', widget: 'string' }
+          - { label: 'Viaje de formación · Recorrido — texto del enlace a cada tramo', name: 'viaje_menu_link', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — título', name: 'viaje_ruta_title', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — párrafo 1', name: 'viaje_ruta_p1', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — párrafo 2', name: 'viaje_ruta_p2', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — párrafo 3', name: 'viaje_ruta_p3', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — párrafo 4', name: 'viaje_ruta_p4', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — párrafo 5', name: 'viaje_ruta_p5', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — noches', name: 'viaje_ruta_nights', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — texto de transición', name: 'viaje_ruta_next', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — título', name: 'viaje_s_title', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — párrafo 1', name: 'viaje_s_p1', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — párrafo 2', name: 'viaje_s_p2', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — párrafo 3', name: 'viaje_s_p3', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — párrafo 4', name: 'viaje_s_p4', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — párrafo 5', name: 'viaje_s_p5', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — noches', name: 'viaje_s_nights', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — texto de transición', name: 'viaje_s_next', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — título', name: 'viaje_c_title', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — párrafo 1', name: 'viaje_c_p1', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — párrafo 2', name: 'viaje_c_p2', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — párrafo 3', name: 'viaje_c_p3', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — noches', name: 'viaje_c_nights', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — texto de transición', name: 'viaje_c_next', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — título de la sección', name: 'viaje_inc_title', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — encabezado "Qué incluye"', name: 'viaje_inc_h1', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — encabezado "Qué no incluye"', name: 'viaje_inc_h2', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — punto 1', name: 'viaje_inc_i1', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — punto 2', name: 'viaje_inc_i2', widget: 'text' }
+          - { label: 'Viaje de formación · Incluye — punto 3', name: 'viaje_inc_i3', widget: 'text' }
+          - { label: 'Viaje de formación · Incluye — punto 4', name: 'viaje_inc_i4', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — punto 5', name: 'viaje_inc_i5', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — punto 6', name: 'viaje_inc_i6', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — punto 7', name: 'viaje_inc_i7', widget: 'text' }
+          - { label: 'Viaje de formación · Incluye — punto 8', name: 'viaje_inc_i8', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 1', name: 'viaje_inc_e1', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 2', name: 'viaje_inc_e2', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 3', name: 'viaje_inc_e3', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 4', name: 'viaje_inc_e4', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 5', name: 'viaje_inc_e5', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 6', name: 'viaje_inc_e6', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 7', name: 'viaje_inc_e7', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 8', name: 'viaje_inc_e8', widget: 'text' }
+          - { label: 'Experiencia Tailandia · título', name: 'descub_title', widget: 'string' }
+          - { label: 'Experiencia Tailandia · característica 1', name: 'descub_f1', widget: 'string' }
+          - { label: 'Experiencia Tailandia · característica 2', name: 'descub_f2', widget: 'string' }
+          - { label: 'Experiencia Tailandia · característica 3', name: 'descub_f3', widget: 'string' }
+          - { label: 'Experiencia Tailandia · característica 4', name: 'descub_f4', widget: 'string' }
+          - { label: 'Experiencia Tailandia · descripción', name: 'descub_text', widget: 'text' }
+          - { label: 'Experiencia Tailandia · botón', name: 'descub_btn', widget: 'string' }
+          - { label: 'Home · Portada · título', name: 'hero_title', widget: 'string' }
+          - { label: 'Home · Portada · subtítulo', name: 'hero_subtitle', widget: 'string' }
+          - { label: 'Home · Portada · botón principal', name: 'hero_cta', widget: 'string' }
+          - { label: 'Home · Portada · botón del viaje', name: 'hero_cta_travel', widget: 'string' }
+          - { label: 'Home · Manos que ofrendan · título', name: 'home_intro_title', widget: 'string' }
+          - { label: 'Home · Manos que ofrendan · texto', name: 'home_intro_text', widget: 'text' }
+          - { label: 'Home · Sobre mí · título de la sección', name: 'about_title', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Quién soy" — encabezado', name: 'about_who', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Certificación" — encabezado', name: 'about_certification', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Experiencia" — encabezado', name: 'about_experience', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Qué me define" — encabezado', name: 'about_defines_me', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Más allá" — encabezado', name: 'about_beyond', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Lo que me dio Tailandia" — título', name: 'about_thailand_title', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Lo que me dio Tailandia" — texto', name: 'about_thailand_text', widget: 'text' }
+          - { label: 'Home · Formaciones · título de la sección', name: 'training_title', widget: 'string' }
+          - { label: 'Home · Formaciones · subtítulo', name: 'training_subtitle', widget: 'string' }
+          - { label: 'Home · Formaciones · introducción', name: 'training_intro', widget: 'text' }
+          - { label: 'Home · Formaciones · botón', name: 'training_cta', widget: 'string' }
+          - { label: 'Home · Formaciones · Masaje Tailandés — nombre', name: 'training_thai_massage', widget: 'string' }
+          - { label: 'Home · Formaciones · Masaje Tailandés — descripción', name: 'training_thai_massage_desc', widget: 'string' }
+          - { label: 'Home · Formaciones · Masaje Tailandés — niveles', name: 'training_thai_levels', widget: 'string' }
+          - { label: 'Home · Formaciones · Programa propio — nombre', name: 'training_own_program', widget: 'string' }
+          - { label: 'Home · Formaciones · Programa propio — nivel 1', name: 'training_own_level1', widget: 'string' }
+          - { label: 'Home · Formaciones · Programa propio — nivel 2', name: 'training_own_level2', widget: 'string' }
+          - { label: 'Home · Formaciones · Técnicas Lanna — nombre', name: 'training_lanna', widget: 'string' }
+          - { label: 'Home · Formaciones · Técnicas Lanna — TokSen', name: 'training_lanna_toksen', widget: 'string' }
+          - { label: 'Home · Formaciones · Técnicas Lanna — PhaKhaMa', name: 'training_lanna_phakhama', widget: 'string' }
+          - { label: 'Home · Formaciones · Técnicas Lanna — Pindas', name: 'training_lanna_pindas', widget: 'string' }
+          - { label: 'Home · Formaciones · Staff hotelero — nombre', name: 'training_hotel', widget: 'string' }
+          - { label: 'Home · Formaciones · Staff hotelero — descripción', name: 'training_hotel_desc', widget: 'string' }
+          - { label: 'Home · Formaciones · Zen Shiatsu — nombre', name: 'training_shiatsu', widget: 'string' }
+          - { label: 'Home · Formaciones · Zen Shiatsu — descripción', name: 'training_shiatsu_desc', widget: 'text' }
+          - { label: 'Home · Formaciones · botón "Saber más"', name: 'formations_learn_more', widget: 'string' }
+          - { label: 'Home · Formaciones · botón "Cerrar"', name: 'formations_close', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · título', name: 'ongs_title', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · tarjeta — título', name: 'ongs_card_title', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · párrafo 1', name: 'ongs_p1', widget: 'text' }
+          - { label: 'Formaciones · Certificación Ong''s · párrafo 2', name: 'ongs_p2', widget: 'text' }
+          - { label: 'Formaciones · Certificación Ong''s · párrafo 3', name: 'ongs_p3', widget: 'text' }
+          - { label: 'Formaciones · Certificación Ong''s · diplomas — título de la sección', name: 'ongs_diplomas_title', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · diploma 1 — texto alternativo (SEO/accesibilidad)', name: 'ongs_d1_alt', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · diploma 1 — pie de foto', name: 'ongs_d1_cap', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · diploma 2 — texto alternativo (SEO/accesibilidad)', name: 'ongs_d2_alt', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · diploma 2 — pie de foto', name: 'ongs_d2_cap', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · diploma 3 — texto alternativo (SEO/accesibilidad)', name: 'ongs_d3_alt', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · diploma 3 — pie de foto', name: 'ongs_d3_cap', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · diplomas de alumnos — título', name: 'ongs_samples_title', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · diploma de alumno 1 — texto alternativo', name: 'ongs_s1_alt', widget: 'text' }
+          - { label: 'Formaciones · Certificación Ong''s · diploma de alumno 2 — texto alternativo', name: 'ongs_s2_alt', widget: 'string' }
+          - { label: 'Formaciones · Certificación Ong''s · diplomas de alumnos — pie de foto', name: 'ongs_samples_cap', widget: 'string' }
+          - { label: 'Home · Sesiones · título de la sección', name: 'sessions_title', widget: 'string' }
+          - { label: 'Home · Sesiones · subtítulo', name: 'sessions_subtitle', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: Nuad Thai', name: 'sessions_nuad_thai', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: en camilla', name: 'sessions_table', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: Aroma Oil', name: 'sessions_aroma', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: Zen Shiatsu', name: 'sessions_shiatsu', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: Moxibustión / Ventosas', name: 'sessions_moxa', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: TokSen / PhakhaMa', name: 'sessions_toksen', widget: 'string' }
+          - { label: 'Home · Sesiones · linaje — título', name: 'sessions_lineage_title', widget: 'string' }
+          - { label: 'Home · Sesiones · linaje — texto', name: 'sessions_lineage_text', widget: 'text' }
+          - { label: 'Home · Sesiones · cierre — texto', name: 'sessions_closing', widget: 'text' }
+          - { label: 'Home · Sesiones · botón', name: 'sessions_cta', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · título de la sección', name: 'travel_title', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · subtítulo', name: 'travel_subtitle', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta grupal — título', name: 'travel_group_title', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta grupal — descripción', name: 'travel_group_desc', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta grupal — distintivo', name: 'travel_group_badge', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta a medida — título', name: 'travel_custom_title', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta a medida — descripción', name: 'travel_custom_desc', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta diseño y curaduría — título', name: 'travel_design_title', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta diseño y curaduría — descripción', name: 'travel_design_desc', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · botón', name: 'travel_cta', widget: 'string' }
+          - { label: 'Home · Alianza · título, parte 1', name: 'alianza_title1', widget: 'string' }
+          - { label: 'Home · Alianza · título, parte 2', name: 'alianza_title2', widget: 'string' }
+          - { label: 'Home · Alianza · texto', name: 'alianza_text', widget: 'text' }
+          - { label: 'Contacto · título', name: 'contact_title', widget: 'string' }
+          - { label: 'Contacto · subtítulo', name: 'contact_subtitle', widget: 'string' }
+          - { label: 'Contacto · campo "Nombre"', name: 'contact_name', widget: 'string' }
+          - { label: 'Contacto · campo "Email"', name: 'contact_email', widget: 'string' }
+          - { label: 'Contacto · campo "Mensaje"', name: 'contact_message', widget: 'string' }
+          - { label: 'Contacto · botón enviar', name: 'contact_send', widget: 'string' }
+          - { label: 'Contacto · etiqueta teléfono', name: 'contact_phone', widget: 'string' }
+          - { label: 'General · título del sitio (pestaña del navegador y Google)', name: 'site_title', widget: 'string' }
+          - { label: 'General · descripción del sitio (Google)', name: 'site_description', widget: 'string' }
+          - { label: 'Menú · Inicio', name: 'nav_home', widget: 'string' }
+          - { label: 'Menú · Sobre Mí', name: 'nav_about', widget: 'string' }
+          - { label: 'Menú · Formaciones', name: 'nav_training', widget: 'string' }
+          - { label: 'Menú · Sesiones', name: 'nav_sessions', widget: 'string' }
+          - { label: 'Menú · Regalo', name: 'nav_gift', widget: 'string' }
+          - { label: 'Menú · Viajes', name: 'nav_travel', widget: 'string' }
+          - { label: 'Menú · Viajes — Viaje de formación', name: 'nav_trip_training', widget: 'string' }
+          - { label: 'Menú · Viajes — Experiencia Tailandia', name: 'nav_trip_experience', widget: 'string' }
+          - { label: 'Menú · Viajes — Diseño y curaduría', name: 'nav_trip_design', widget: 'string' }
+          - { label: 'Menú · Viajes — rótulo "Próximamente"', name: 'nav_trip_soon', widget: 'string' }
+          - { label: 'Menú · Contacto', name: 'nav_contact', widget: 'string' }
+          - { label: 'Pie de página · derechos', name: 'footer_rights', widget: 'string' }
+          - { label: 'Pie de página · frase', name: 'footer_tagline', widget: 'string' }
+          - { label: 'Interfaz · tema claro', name: 'theme_light', widget: 'string' }
+          - { label: 'Interfaz · tema oscuro', name: 'theme_dark', widget: 'string' }
+          - { label: 'Interfaz · tema del sistema', name: 'theme_system', widget: 'string' }
+          - { label: 'Interfaz · nombre del otro idioma', name: 'lang_switch', widget: 'string' }
+      - name: 'texts_en'
+        label: 'Todos los textos — English'
+        file: 'messages/en.json'
+        fields:
+          - { label: '(uso interno, no editar)', name: '$schema', widget: 'hidden' }
+          - { label: 'Viaje de formación · Portada — rótulo pequeño', name: 'travel_kicker', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — frase principal', name: 'travel_claim', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — dato: duración', name: 'travel_fact_days', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — dato: ciudades', name: 'travel_fact_cities', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — dato: grupo', name: 'travel_fact_group', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — dato: formación', name: 'travel_fact_training', widget: 'string' }
+          - { label: 'Viaje de formación · Portada — presentación del viaje', name: 'travel_pitch', widget: 'text' }
+          - { label: 'Viaje de formación · Itinerario — paso 1: título', name: 'travel_step1_title', widget: 'string' }
+          - { label: 'Viaje de formación · Itinerario — paso 1: texto', name: 'travel_step1_text', widget: 'string' }
+          - { label: 'Viaje de formación · Itinerario — paso 2: título', name: 'travel_step2_title', widget: 'string' }
+          - { label: 'Viaje de formación · Itinerario — paso 2: texto', name: 'travel_step2_text', widget: 'text' }
+          - { label: 'Viaje de formación · Itinerario — paso 3: título', name: 'travel_step3_title', widget: 'string' }
+          - { label: 'Viaje de formación · Itinerario — paso 3: texto', name: 'travel_step3_text', widget: 'text' }
+          - { label: 'Viaje de formación · Portada — botón', name: 'travel_cta_join', widget: 'string' }
+          - { label: 'Viaje de formación · Detalles — rótulo', name: 'details_kicker', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — título de la sección', name: 'travel_cities_title', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — Bangkok: título', name: 'city_bangkok_title', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — Bangkok: texto', name: 'city_bangkok_text', widget: 'text' }
+          - { label: 'Viaje de formación · Ciudades — Sukhothai: título', name: 'city_sukhothai_title', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — Sukhothai: texto', name: 'city_sukhothai_text', widget: 'text' }
+          - { label: 'Viaje de formación · Ciudades — Chiang Mai: título', name: 'city_chiangmai_title', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — Chiang Mai: texto', name: 'city_chiangmai_text', widget: 'text' }
+          - { label: 'Viaje de formación · Ciudades — Ayutthaya: título', name: 'city_ayutthaya_title', widget: 'string' }
+          - { label: 'Viaje de formación · Ciudades — Ayutthaya: texto', name: 'city_ayutthaya_text', widget: 'text' }
+          - { label: 'Viaje de formación · Aprendizaje — título', name: 'travel_training_title', widget: 'string' }
+          - { label: 'Viaje de formación · Aprendizaje — texto', name: 'travel_training_text', widget: 'text' }
+          - { label: 'Viaje de formación · Video — rótulo', name: 'travel_video_kicker', widget: 'string' }
+          - { label: 'Viaje de formación · Video — título', name: 'travel_video_title', widget: 'string' }
+          - { label: 'Viaje de formación · Momentos — rótulo', name: 'travel_moments_kicker', widget: 'string' }
+          - { label: 'Viaje de formación · El grupo — título', name: 'travel_crew_title', widget: 'string' }
+          - { label: 'Viaje de formación · El grupo — texto', name: 'travel_crew_text', widget: 'text' }
+          - { label: 'Viaje de formación · Cierre — texto final', name: 'travel_closing', widget: 'text' }
+          - { label: 'Viaje de formación · Recorrido — rótulo', name: 'viaje_ruta_kicker', widget: 'string' }
+          - { label: 'Viaje de formación · Recorrido — texto del enlace a cada tramo', name: 'viaje_menu_link', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — título', name: 'viaje_ruta_title', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — párrafo 1', name: 'viaje_ruta_p1', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — párrafo 2', name: 'viaje_ruta_p2', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — párrafo 3', name: 'viaje_ruta_p3', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — párrafo 4', name: 'viaje_ruta_p4', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — párrafo 5', name: 'viaje_ruta_p5', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — noches', name: 'viaje_ruta_nights', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 1: Bangkok — texto de transición', name: 'viaje_ruta_next', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — título', name: 'viaje_s_title', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — párrafo 1', name: 'viaje_s_p1', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — párrafo 2', name: 'viaje_s_p2', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — párrafo 3', name: 'viaje_s_p3', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — párrafo 4', name: 'viaje_s_p4', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — párrafo 5', name: 'viaje_s_p5', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — noches', name: 'viaje_s_nights', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 2: Sukhothai — texto de transición', name: 'viaje_s_next', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — título', name: 'viaje_c_title', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — párrafo 1', name: 'viaje_c_p1', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — párrafo 2', name: 'viaje_c_p2', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — párrafo 3', name: 'viaje_c_p3', widget: 'text' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — noches', name: 'viaje_c_nights', widget: 'string' }
+          - { label: 'Viaje de formación · Tramo 3: Chiang Mai — texto de transición', name: 'viaje_c_next', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — título de la sección', name: 'viaje_inc_title', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — encabezado "Qué incluye"', name: 'viaje_inc_h1', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — encabezado "Qué no incluye"', name: 'viaje_inc_h2', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — punto 1', name: 'viaje_inc_i1', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — punto 2', name: 'viaje_inc_i2', widget: 'text' }
+          - { label: 'Viaje de formación · Incluye — punto 3', name: 'viaje_inc_i3', widget: 'text' }
+          - { label: 'Viaje de formación · Incluye — punto 4', name: 'viaje_inc_i4', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — punto 5', name: 'viaje_inc_i5', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — punto 6', name: 'viaje_inc_i6', widget: 'string' }
+          - { label: 'Viaje de formación · Incluye — punto 7', name: 'viaje_inc_i7', widget: 'text' }
+          - { label: 'Viaje de formación · Incluye — punto 8', name: 'viaje_inc_i8', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 1', name: 'viaje_inc_e1', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 2', name: 'viaje_inc_e2', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 3', name: 'viaje_inc_e3', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 4', name: 'viaje_inc_e4', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 5', name: 'viaje_inc_e5', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 6', name: 'viaje_inc_e6', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 7', name: 'viaje_inc_e7', widget: 'string' }
+          - { label: 'Viaje de formación · No incluye — punto 8', name: 'viaje_inc_e8', widget: 'text' }
+          - { label: 'Experiencia Tailandia · título', name: 'descub_title', widget: 'string' }
+          - { label: 'Experiencia Tailandia · característica 1', name: 'descub_f1', widget: 'string' }
+          - { label: 'Experiencia Tailandia · característica 2', name: 'descub_f2', widget: 'string' }
+          - { label: 'Experiencia Tailandia · característica 3', name: 'descub_f3', widget: 'string' }
+          - { label: 'Experiencia Tailandia · característica 4', name: 'descub_f4', widget: 'string' }
+          - { label: 'Experiencia Tailandia · descripción', name: 'descub_text', widget: 'text' }
+          - { label: 'Experiencia Tailandia · botón', name: 'descub_btn', widget: 'string' }
+          - { label: 'Home · Portada · título', name: 'hero_title', widget: 'string' }
+          - { label: 'Home · Portada · subtítulo', name: 'hero_subtitle', widget: 'string' }
+          - { label: 'Home · Portada · botón principal', name: 'hero_cta', widget: 'string' }
+          - { label: 'Home · Portada · botón del viaje', name: 'hero_cta_travel', widget: 'string' }
+          - { label: 'Home · Manos que ofrendan · título', name: 'home_intro_title', widget: 'string' }
+          - { label: 'Home · Manos que ofrendan · texto', name: 'home_intro_text', widget: 'text' }
+          - { label: 'Home · Sobre mí · título de la sección', name: 'about_title', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Quién soy" — encabezado', name: 'about_who', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Certificación" — encabezado', name: 'about_certification', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Experiencia" — encabezado', name: 'about_experience', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Qué me define" — encabezado', name: 'about_defines_me', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Más allá" — encabezado', name: 'about_beyond', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Lo que me dio Tailandia" — título', name: 'about_thailand_title', widget: 'string' }
+          - { label: 'Home · Sobre mí · "Lo que me dio Tailandia" — texto', name: 'about_thailand_text', widget: 'text' }
+          - { label: 'Home · Formaciones · título de la sección', name: 'training_title', widget: 'string' }
+          - { label: 'Home · Formaciones · subtítulo', name: 'training_subtitle', widget: 'string' }
+          - { label: 'Home · Formaciones · introducción', name: 'training_intro', widget: 'text' }
+          - { label: 'Home · Formaciones · botón', name: 'training_cta', widget: 'string' }
+          - { label: 'Home · Formaciones · Masaje Tailandés — nombre', name: 'training_thai_massage', widget: 'string' }
+          - { label: 'Home · Formaciones · Masaje Tailandés — descripción', name: 'training_thai_massage_desc', widget: 'string' }
+          - { label: 'Home · Formaciones · Masaje Tailandés — niveles', name: 'training_thai_levels', widget: 'string' }
+          - { label: 'Home · Formaciones · Programa propio — nombre', name: 'training_own_program', widget: 'string' }
+          - { label: 'Home · Formaciones · Programa propio — nivel 1', name: 'training_own_level1', widget: 'string' }
+          - { label: 'Home · Formaciones · Programa propio — nivel 2', name: 'training_own_level2', widget: 'string' }
+          - { label: 'Home · Formaciones · Técnicas Lanna — nombre', name: 'training_lanna', widget: 'string' }
+          - { label: 'Home · Formaciones · Técnicas Lanna — TokSen', name: 'training_lanna_toksen', widget: 'string' }
+          - { label: 'Home · Formaciones · Técnicas Lanna — PhaKhaMa', name: 'training_lanna_phakhama', widget: 'string' }
+          - { label: 'Home · Formaciones · Técnicas Lanna — Pindas', name: 'training_lanna_pindas', widget: 'string' }
+          - { label: 'Home · Formaciones · Staff hotelero — nombre', name: 'training_hotel', widget: 'string' }
+          - { label: 'Home · Formaciones · Staff hotelero — descripción', name: 'training_hotel_desc', widget: 'string' }
+          - { label: 'Home · Formaciones · Zen Shiatsu — nombre', name: 'training_shiatsu', widget: 'string' }
+          - { label: 'Home · Formaciones · Zen Shiatsu — descripción', name: 'training_shiatsu_desc', widget: 'text' }
+          - { label: 'Home · Formaciones · botón "Saber más"', name: 'formations_learn_more', widget: 'string' }
+          - { label: 'Home · Formaciones · botón "Cerrar"', name: 'formations_close', widget: 'string' }
+          - { label: 'Home · Sesiones · título de la sección', name: 'sessions_title', widget: 'string' }
+          - { label: 'Home · Sesiones · subtítulo', name: 'sessions_subtitle', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: Nuad Thai', name: 'sessions_nuad_thai', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: en camilla', name: 'sessions_table', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: Aroma Oil', name: 'sessions_aroma', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: Zen Shiatsu', name: 'sessions_shiatsu', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: Moxibustión / Ventosas', name: 'sessions_moxa', widget: 'string' }
+          - { label: 'Home · Sesiones · sesión: TokSen / PhakhaMa', name: 'sessions_toksen', widget: 'string' }
+          - { label: 'Home · Sesiones · linaje — título', name: 'sessions_lineage_title', widget: 'string' }
+          - { label: 'Home · Sesiones · linaje — texto', name: 'sessions_lineage_text', widget: 'text' }
+          - { label: 'Home · Sesiones · cierre — texto', name: 'sessions_closing', widget: 'text' }
+          - { label: 'Home · Sesiones · botón', name: 'sessions_cta', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · título de la sección', name: 'travel_title', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · subtítulo', name: 'travel_subtitle', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta grupal — título', name: 'travel_group_title', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta grupal — descripción', name: 'travel_group_desc', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta grupal — distintivo', name: 'travel_group_badge', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta a medida — título', name: 'travel_custom_title', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta a medida — descripción', name: 'travel_custom_desc', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta diseño y curaduría — título', name: 'travel_design_title', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · tarjeta diseño y curaduría — descripción', name: 'travel_design_desc', widget: 'string' }
+          - { label: 'Home · Viajes (tarjetas) · botón', name: 'travel_cta', widget: 'string' }
+          - { label: 'Home · Alianza · título, parte 1', name: 'alianza_title1', widget: 'string' }
+          - { label: 'Home · Alianza · título, parte 2', name: 'alianza_title2', widget: 'string' }
+          - { label: 'Home · Alianza · texto', name: 'alianza_text', widget: 'text' }
+          - { label: 'Contacto · título', name: 'contact_title', widget: 'string' }
+          - { label: 'Contacto · subtítulo', name: 'contact_subtitle', widget: 'string' }
+          - { label: 'Contacto · campo "Nombre"', name: 'contact_name', widget: 'string' }
+          - { label: 'Contacto · campo "Email"', name: 'contact_email', widget: 'string' }
+          - { label: 'Contacto · campo "Mensaje"', name: 'contact_message', widget: 'string' }
+          - { label: 'Contacto · botón enviar', name: 'contact_send', widget: 'string' }
+          - { label: 'Contacto · etiqueta teléfono', name: 'contact_phone', widget: 'string' }
+          - { label: 'General · título del sitio (pestaña del navegador y Google)', name: 'site_title', widget: 'string' }
+          - { label: 'General · descripción del sitio (Google)', name: 'site_description', widget: 'string' }
+          - { label: 'Menú · Inicio', name: 'nav_home', widget: 'string' }
+          - { label: 'Menú · Sobre Mí', name: 'nav_about', widget: 'string' }
+          - { label: 'Menú · Formaciones', name: 'nav_training', widget: 'string' }
+          - { label: 'Menú · Sesiones', name: 'nav_sessions', widget: 'string' }
+          - { label: 'Menú · Regalo', name: 'nav_gift', widget: 'string' }
+          - { label: 'Menú · Viajes', name: 'nav_travel', widget: 'string' }
+          - { label: 'Menú · Viajes — Viaje de formación', name: 'nav_trip_training', widget: 'string' }
+          - { label: 'Menú · Viajes — Experiencia Tailandia', name: 'nav_trip_experience', widget: 'string' }
+          - { label: 'Menú · Viajes — Diseño y curaduría', name: 'nav_trip_design', widget: 'string' }
+          - { label: 'Menú · Viajes — rótulo "Próximamente"', name: 'nav_trip_soon', widget: 'string' }
+          - { label: 'Menú · Contacto', name: 'nav_contact', widget: 'string' }
+          - { label: 'Pie de página · derechos', name: 'footer_rights', widget: 'string' }
+          - { label: 'Pie de página · frase', name: 'footer_tagline', widget: 'string' }
+          - { label: 'Interfaz · tema claro', name: 'theme_light', widget: 'string' }
+          - { label: 'Interfaz · tema oscuro', name: 'theme_dark', widget: 'string' }
+          - { label: 'Interfaz · tema del sistema', name: 'theme_system', widget: 'string' }
+          - { label: 'Interfaz · nombre del otro idioma', name: 'lang_switch', widget: 'string' }
   - name: about
     label: "Sobre Mí / About"
     i18n: true
