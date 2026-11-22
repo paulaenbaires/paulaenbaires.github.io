@@ -481,3 +481,18 @@ collections:
           - { label: "Instagram URL", name: "instagram", widget: "string" }
           - { label: "Facebook URL", name: "facebook", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
+
+  - name: 'rttest'
+    label: 'ZZ Test Roundtrip'
+    files:
+      - name: 'rttest'
+        label: 'ZZ Test'
+        file: 'content/settings/rt-test.json'
+        fields:
+          - { label: 'schema', name: '$schema', widget: 'hidden' }
+          - { label: 'Título', name: 'title', widget: 'string' }
+          - { label: 'Largo', name: 'long', widget: 'text' }
+          - { label: 'Vacío', name: 'empty', widget: 'string', required: false }
+          - { label: 'Oculto', name: 'hidden_key', widget: 'hidden' }
+          - { label: 'Emoji', name: 'emoji', widget: 'string' }
+          - { label: 'Numérico', name: 'number_like', widget: 'string' }
