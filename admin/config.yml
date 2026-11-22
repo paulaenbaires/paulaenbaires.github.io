@@ -209,6 +209,70 @@ collections:
           - { label: 'Interfaz · tema oscuro', name: 'theme_dark', widget: 'string' }
           - { label: 'Interfaz · tema del sistema', name: 'theme_system', widget: 'string' }
           - { label: 'Interfaz · nombre del otro idioma', name: 'lang_switch', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Menú — título "Cuatro etapas"', name: 'exp_menu_title', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 1 — nombre', name: 'exp_e1_name', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 1 — noches', name: 'exp_e1_noches', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 1 — resumen en el menú', name: 'exp_e1_resumen', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Etapa 2 — nombre', name: 'exp_e2_name', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 2 — noches', name: 'exp_e2_noches', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 2 — resumen en el menú', name: 'exp_e2_resumen', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 3 — nombre', name: 'exp_e3_name', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 3 — noches', name: 'exp_e3_noches', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 3 — resumen en el menú', name: 'exp_e3_resumen', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 4 — nombre', name: 'exp_e4_name', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 4 — noches', name: 'exp_e4_noches', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Etapa 4 — resumen en el menú', name: 'exp_e4_resumen', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Tramo 1 (Bangkok) — rótulo', name: 'exp_t1_kicker', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Tramo 1 (Bangkok) — párrafo 1', name: 'exp_t1_p1', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Tramo 1 (Bangkok) — párrafo 2', name: 'exp_t1_p2', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Tramo 1 (Bangkok) — párrafo 3', name: 'exp_t1_p3', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Tramo 1 (Bangkok) — párrafo 4', name: 'exp_t1_p4', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Tramo 1 (Bangkok) — párrafo 5', name: 'exp_t1_p5', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Tramo 1 (Bangkok) — cita de cierre', name: 'exp_t1_quote', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Tramo 2 (tren) — rótulo', name: 'exp_t2_kicker', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Tramo 2 (tren) — título', name: 'exp_t2_title', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Tramo 2 (tren) — párrafo 1', name: 'exp_t2_p1', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Tramo 3 (Chiang Mai) — rótulo', name: 'exp_t2_kicker3', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Tramo 3 (Chiang Mai) — párrafo 1', name: 'exp_t3_p1', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Tramo 3 (Chiang Mai) — párrafo 2', name: 'exp_t3_p2', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Tramo 3 (Chiang Mai) — párrafo 3', name: 'exp_t3_p3', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Tramo 3 (Chiang Mai) — párrafo 4', name: 'exp_t3_p4', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Tramo 3 (Chiang Mai) — cita de cierre', name: 'exp_t3_quote', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Tramo 4 (playa) — rótulo', name: 'exp_t4_kicker', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Tramo 4 (playa) — párrafo 1', name: 'exp_t4_p1', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Tramo 4 (playa) — párrafo 2', name: 'exp_t4_p2', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Tramo 4 (playa) — cita de cierre', name: 'exp_t4_quote', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Experiencias a elección — rótulo', name: 'exp_xp_kicker', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencias a elección — título', name: 'exp_xp_title', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencias a elección — introducción', name: 'exp_xp_intro', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Experiencia 1 — nombre', name: 'exp_x1_name', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 1 — texto', name: 'exp_x1_text', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 2 — nombre', name: 'exp_x2_name', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 2 — texto', name: 'exp_x2_text', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 3 — nombre', name: 'exp_x3_name', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 3 — texto', name: 'exp_x3_text', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 4 — nombre', name: 'exp_x4_name', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 4 — texto', name: 'exp_x4_text', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 5 — nombre', name: 'exp_x5_name', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 5 — texto', name: 'exp_x5_text', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 6 — nombre', name: 'exp_x6_name', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Experiencia 6 — texto', name: 'exp_x6_text', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Para tener en cuenta — título', name: 'exp_nota_title', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Para tener en cuenta — punto 1', name: 'exp_nota_1', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Para tener en cuenta — punto 2', name: 'exp_nota_2', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Para tener en cuenta — punto 3', name: 'exp_nota_3', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Para tener en cuenta — punto 4', name: 'exp_nota_4', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Para tener en cuenta — punto 5', name: 'exp_nota_5', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Cierre — título "¿Te sumás?"', name: 'exp_cierre_title', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Cierre — texto', name: 'exp_cierre_text', widget: 'text' }
+          - { label: 'Experiencia Tailandia · Imagen — texto alternativo: Bangkok (templo y lancha)', name: 'exp_alt1', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Imagen — texto alternativo: tren nocturno (asientos)', name: 'exp_alt2', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Imagen — texto alternativo: Chiang Mai (estupa y faroles)', name: 'exp_alt3', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Imagen — texto alternativo: playa (mar y lancha)', name: 'exp_alt4', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Imagen — texto alternativo: calle de Bangkok (taxis y tuk tuks)', name: 'exp_alt5', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Imagen — texto alternativo: interior del tren nocturno', name: 'exp_alt6', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Imagen — texto alternativo: patio de templo en Chiang Mai', name: 'exp_alt7', widget: 'string' }
+          - { label: 'Experiencia Tailandia · Imagen — texto alternativo: playa con palmeras y lanchas', name: 'exp_alt8', widget: 'string' }
       - name: 'texts_en'
         label: 'Todos los textos — English'
         file: 'messages/en.json'
